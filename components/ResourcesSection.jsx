@@ -68,6 +68,7 @@ const Column = ({ src, heading, description, links }) => {
       <p>{description}</p>
       {links.map((link) => (
         <Link
+          key={link.title}
           className="font-semibold text-[#235EDF] flex gap-1 items-center hover:border-b-[#235EDF] border-b-2 border-b-transparent w-fit"
           href={link.href}
         >
